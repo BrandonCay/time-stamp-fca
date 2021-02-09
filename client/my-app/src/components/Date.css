@@ -1,0 +1,22 @@
+@keyframes cycle{
+    0%{
+        top:0;
+    }
+    50%{
+        top:-4900vh;
+    }
+    100%{
+        top:0;
+    }
+}
+
+.backgroundStyle{
+    z-index:-1;
+    float:right;
+    position: fixed;
+    width:100vw;
+    height:5000vh; 
+    background:linear-gradient(180deg, rgba(8,0,172,1) 0%, rgba(254,107,139,1) 50%, rgba(255,142,83,1) 100%);
+    /*linear-gradient(0deg, rgba(8,0,172,1) 0%, rgba(254,107,139,1) 25%, rgba(255,142,83,1) 50%, rgba(254,107,139,1) 75%, rgba(8,0,172,1) 100%);*/
+    animation:cycle 45s infinite;
+}
